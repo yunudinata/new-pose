@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(105, 151, 110);">
+        <div class="container-fluid">
+            <!-- Logo di tengah -->
+            <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="#">
+                <img src="./assets/POSE-06.png" height="35" alt="Pose Logo">
+            </a>
+
+            <!-- Tombol toggle untuk mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <style>
+                    .toggler-icon {
+                        width: 30px;
+                        height: 24px;
+                        position: relative;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+
+                    .toggler-icon span {
+                        display: block;
+                        position: absolute;
+                        height: 3px;
+                        width: 100%;
+                        background: white;
+                        border-radius: 2px;
+                        transition: all 0.3s ease;
+                    }
+
+                    .toggler-icon span:nth-child(1) {
+                        top: 0;
+                    }
+
+                    .toggler-icon span:nth-child(2) {
+                        top: 10px;
+                    }
+
+                    .toggler-icon span:nth-child(3) {
+                        top: 20px;
+                    }
+
+                    /* ANIMASI JADI X */
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 10px;
+                    }
+
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 10px;
+                    }
+                </style>
+            </button>
+
+            <!-- Isi menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+                <!-- Menu Kiri -->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Collections</a>
+                    </li>
+                </ul>
+
+                <!-- Menu Kanan -->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="#">Showcase</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="nav-indicator"></div>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!-- GRID PRODUK -->
+        <div class="container py-5">
+            <h3
+                style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px;">
+                Pose limited T-shirt colections</h3>
+            <p></p>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="card product-hover-card border-0">
+                        <div class="img-container">
+                            <img src="/assets/blnoc-f.jpg" class="main-img" alt="front">
+                            <img src="/assets/blnoc-b.jpg" class="hover-img" alt="back">
+                        </div>
+                        <div class="card-body text-center" style="padding: 5px;">
+                            <a href="#" style="text-decoration: none; color: #333;" title="Lihat Gallery Foto">
+                                <h6 class="card-title fw-bold">Blue Nature Of Culture</h6>
+                                <p class="card-text">Cotton Combed 24s</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 end -->
+
+                <!-- Card 1 -->
+                <div class="col-6 col-md-4 col-lg-4">
+                    <div class="card product-hover-card border-0">
+                        <div class="img-container">
+                            <img src="/assets/blnoc-f.jpg" class="main-img" alt="front">
+                            <img src="/assets/blnoc-b.jpg" class="hover-img" alt="back">
+                        </div>
+                        <div class="card-body text-center" style="padding: 5px;">
+                            <a href="#" style="text-decoration: none; color: #333;" title="Lihat Gallery Foto">
+                                <h6 class="card-title fw-bold">Blue Nature Of Culture</h6>
+                                <p class="card-text">Cotton Combed 24s</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 end -->
+            </div>
+        </div>
+
+
+
+
+        <!-- RUNNING TEXT -->
+        <div class="marquee-container">
+            <div class="marquee-text"> <img src="/pattern/p-wh1.png" height="35px"> CARE WITH POSE <img
+                    src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+                <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+                CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+                CARE WITH POSE <img src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+                <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+                CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+            </div>
+        </div>
+
+        <footer class="ini-footer">
+            <p style="text-align: center; margin-top:0px; font-weight: 550;">Visit us at :</p>
+            <div style="text-align: center; margin: 20px;">
+                <a href="https://www.instagram.com/withpose?igsh=MTBuZWlnangzN3poOA=="
+                    style="text-decoration: none; margin: 10px;" title="Instagram" target="_blank">
+                    <img src="/assets/instagram.png" height="25px" alt="ig">
+                </a>
+                <a href="#" style="text-decoration: none;" target="_blank">
+                    <img src="/assets/tik-tok.png" height="25px" alt="tiktok" title="TikTok">
+                </a>
+                <a href="https://id.shp.ee/eyXUG7L" style="text-decoration: none; margin: 10px;" target="_blank">
+                    <img src="/assets/shopee copy.png" height="25px" alt="Shopee" title="Shopee">
+                </a>
+            </div>
+            <div class="copyright" style="text-align: center; margin-top: 10px; padding: 10px;">
+                <h5 style="font-weight: 550;">&copy2025</h5>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+            </script>
+
+        <script>
+            const links = document.querySelectorAll('.navbar .nav-link');
+            const indicator = document.querySelector('.nav-indicator');
+
+            function moveIndicator(link) {
+                const rect = link.getBoundingClientRect();
+                const navRect = link.closest('.navbar').getBoundingClientRect();
+
+                const width = rect.width;
+                const left = rect.left - navRect.left + (width / 2);
+
+                indicator.style.width = '0';
+                indicator.style.transition = 'none';
+                indicator.style.left = left + 'px';
+
+                // Trigger reflow before animating
+                void indicator.offsetWidth;
+
+                indicator.style.transition = 'width 0.3s ease, left 0.3s ease';
+                indicator.style.width = width + 'px';
+                indicator.style.left = rect.left - navRect.left + 'px';
+            }
+
+            function setToActive() {
+                const activeLink = document.querySelector('.nav-link.active');
+                if (activeLink) moveIndicator(activeLink);
+            }
+
+            // Saat pertama kali load
+            window.addEventListener('DOMContentLoaded', setToActive);
+
+            // Saat resize
+            window.addEventListener('resize', setToActive);
+
+            // Saat hover
+            links.forEach(link => {
+                link.addEventListener('mouseenter', () => moveIndicator(link));
+            });
+
+            // Kembali ke active setelah mouse keluar
+            const navbar = document.querySelector('.navbar');
+            navbar.addEventListener('mouseleave', setToActive);
+        </script>
+</body>
+
+</html>

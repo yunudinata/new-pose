@@ -1,0 +1,143 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Helvetica,;
+}
+ 
+ul {
+  list-style-type: none;
+  margin: 2px;
+  padding: 1px;
+  background-color: rgb(105, 151, 110);
+  overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+    letter-spacing: 1px;
+}
+
+.navbar {
+  position: relative;
+}
+
+.nav-indicator {
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  bottom: 0; /* tepat di bawah navbar */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(105, 151, 110);
+    color: #f3f3f3;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-link {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+@keyframes marquee {
+    0% {
+    transform: translateX(100%);
+    }
+
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+}
+
+.img-container img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.main-img {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+.product-hover-card:hover .hover-img {
+  opacity: 1;
+}
+
+.product-hover-card:hover .main-img {
+  opacity: 0;
+}
+
+.card-title {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-body {
+  margin-bottom: 0.5rem;
+}
+
+.creator {
+  font-style: italic;
+  text-align:  right;
+  padding: 20px;
+  background-color: rgb(105, 151, 110);
+}
+
+.end-quote {
+  font-style: italic;
+  text-align:  left;
+  padding: 20px;
+  background-color: rgb(105, 151, 110);
+}
+
+.ini-footer {
+  color: #f3f3f3;
+  background-color: rgb(105, 151, 110);
+  margin-top: 0px;
+}
+
+.foot-flex {
+  display: flex;
+  justify-content: space-between;
+}
