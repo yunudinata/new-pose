@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="/pattern/p-wh4.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(105, 151, 110);">
+        <div class="container-fluid">
+            <!-- Logo di tengah -->
+            <a class="navbar-brand mx-auto position-absolute start-50 translate-middle-x" href="index.html">
+                <img src="./assets/POSE-06.png" height="35" alt="Pose Logo">
+            </a>
+
+            <!-- Tombol toggle untuk mobile -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <style>
+                    .toggler-icon {
+                        width: 30px;
+                        height: 24px;
+                        position: relative;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+
+                    .toggler-icon span {
+                        display: block;
+                        position: absolute;
+                        height: 3px;
+                        width: 100%;
+                        background: white;
+                        border-radius: 2px;
+                        transition: all 0.3s ease;
+                    }
+
+                    .toggler-icon span:nth-child(1) {
+                        top: 0;
+                    }
+
+                    .toggler-icon span:nth-child(2) {
+                        top: 10px;
+                    }
+
+                    .toggler-icon span:nth-child(3) {
+                        top: 20px;
+                    }
+
+                    /* ANIMASI JADI X */
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 10px;
+                    }
+
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .navbar-toggler[aria-expanded="true"] .toggler-icon span:nth-child(3) {
+                        transform: rotate(-45deg);
+                        top: 10px;
+                    }
+                </style>
+            </button>
+
+            <!-- Isi menu -->
+            <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+                <!-- Menu Kiri -->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="Collections.html">Collections</a>
+                    </li>
+                </ul>
+
+                <!-- Menu Kanan -->
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white active" aria-current="page" href="showcase.html">Showcase</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white" aria-current="page" href="#">About</a>
+                    </li>
+                </ul>
+                <div class="nav-indicator"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- RUNNING TEXT START -->
+    <div class="marquee-container">
+        <div class="marquee-text"> <img src="/pattern/p-wh1.png" height="35px"> CARE WITH POSE <img
+                src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+            <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+            <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+        </div>
+    </div>
+    <!-- RUNNING TEXT END -->
+
+
+    <div class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                <img src="assets/posemember.jpg" class="img-fluid w-100 rounded" alt="pose team">
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="fs-4 fw-medium ">
+                    Pose adalah sebuah rebranding dari Purpose.cloth. Yang dimana versi lebih modern dari Purpose.cloth.
+                    Tapi
+                    tetap membawa pesan dan semangat yang sama-sama baik. Kami menghadirkan berbagai pilihan pakaian dan
+                    aksesoris modern yang dirancang dengan bahan ramah lingkungan dan proses produksi berkelanjutan. Di
+                    Pose,
+                    tampil stylish bukan berarti mengorbankan bumi karena setiap pilihan fashion bisa menjadi langkah kecil
+                    untuk perubahan besar.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img src="assets/posemember2 new.jpg" class="img-fluid rounded w-100" alt="pose showcase">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- RUNNING TEXT START -->
+    <div class="marquee-container">
+        <div class="marquee-text"> <img src="/pattern/p-wh1.png" height="35px"> CARE WITH POSE <img
+                src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+            <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk2.png" height="35px"> CARE WITH POSE
+            <img src="/pattern/p-wh3.png" height="35px"> CARE WITH POSE <img src="/pattern/p-wh4.png" height="35px">
+            CARE WITH POSE <img src="/pattern/p-pk3.png" height="35px">
+        </div>
+    </div>
+    <!-- RUNNING TEXT END -->
+    <footer class="ini-footer">
+        <p style="text-align: center; margin-top:0px; font-weight: 550;">Visit us at :</p>
+        <div style="text-align: center; margin: 20px;">
+            <a href="https://www.instagram.com/withpose?igsh=MTBuZWlnangzN3poOA=="
+                style="text-decoration: none; margin: 10px;" title="Instagram" target="_blank">
+                <img src="/assets/instagram.png" height="25px" alt="ig">
+            </a>
+            <a href="#" style="text-decoration: none;" target="_blank">
+                <img src="/assets/tik-tok.png" height="25px" alt="tiktok" title="TikTok">
+            </a>
+            <a href="https://id.shp.ee/eyXUG7L" style="text-decoration: none; margin: 10px;" target="_blank">
+                <img src="/assets/shopee copy.png" height="25px" alt="Shopee" title="Shopee">
+            </a>
+        </div>
+        <div class="copyright" style="text-align: center; margin-top: 10px; padding: 10px;">
+            <h5 style="font-weight: 550;">&copy2025</h5>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const links = document.querySelectorAll('.navbar .nav-link');
+        const indicator = document.querySelector('.nav-indicator');
+
+        function moveIndicator(link) {
+            const rect = link.getBoundingClientRect();
+            const navRect = link.closest('.navbar').getBoundingClientRect();
+
+            const width = rect.width;
+            const left = rect.left - navRect.left + (width / 2);
+
+            indicator.style.width = '0';
+            indicator.style.transition = 'none';
+            indicator.style.left = left + 'px';
+
+            // Trigger reflow before animating
+            void indicator.offsetWidth;
+
+            indicator.style.transition = 'width 0.3s ease, left 0.3s ease';
+            indicator.style.width = width + 'px';
+            indicator.style.left = rect.left - navRect.left + 'px';
+        }
+
+        function setToActive() {
+            const activeLink = document.querySelector('.nav-link.active');
+            if (activeLink) moveIndicator(activeLink);
+        }
+
+        // Saat pertama kali load
+        window.addEventListener('DOMContentLoaded', setToActive);
+
+        // Saat resize
+        window.addEventListener('resize', setToActive);
+
+        // Saat hover
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => moveIndicator(link));
+        });
+
+        // Kembali ke active setelah mouse keluar
+        const navbar = document.querySelector('.navbar');
+        navbar.addEventListener('mouseleave', setToActive);
+    </script>
+</body>
+
+</html>
